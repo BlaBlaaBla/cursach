@@ -1,0 +1,40 @@
+@startuml
+class mainapp.cursach.PhoneBookApp {
+- ObservableList<Contact> contacts
+- File storageFile
++ void start(Stage)
+- void saveToFile()
+- void loadFromFile()
++ {static} void main(String[])
+}
+
+
+class mainapp.cursach.PhoneBookApp$Contact {
+- {static} long serialVersionUID
+- String fullName
+- List<Phone> phones
+- javafx.beans.property.StringProperty fullNameProp
++ String getFullName()
++ void setFullName(String)
++ javafx.beans.property.StringProperty fullNameProperty()
++ List<Phone> getPhones()
+}
+
+
+class mainapp.cursach.PhoneBookApp$Phone {
+- {static} long serialVersionUID
+- String number
+- String type
++ String getNumber()
++ String getType()
+}
+
+
+
+
+javafx.application.Application <|-- mainapp.cursach.PhoneBookApp
+mainapp.cursach.PhoneBookApp +.. mainapp.cursach.PhoneBookApp$Contact
+mainapp.cursach.Serializable <|.. mainapp.cursach.PhoneBookApp$Contact
+mainapp.cursach.PhoneBookApp +.. mainapp.cursach.PhoneBookApp$Phone
+mainapp.cursach.Serializable <|.. mainapp.cursach.PhoneBookApp$Phone
+@enduml
