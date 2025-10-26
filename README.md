@@ -15,4 +15,4 @@ rm -rf ~/.m2/repository
 
 ./mvnw javafx:run
 
-Приложение теститоровалось на kali linux с jdk-21
+Приложение тестировалось на Kali Linux с JDK-21.
