@@ -14,3 +14,5 @@ rm -rf ~/.m2/repository
 5. Запустить приложение Через Maven
 
 ./mvnw javafx:run
+
+Приложение теститоровалось на kali linux с jdk-21
