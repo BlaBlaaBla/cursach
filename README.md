@@ -15,7 +15,7 @@ rm -rf ~/.m2/repository
 
 ./mvnw javafx:run
 
-Приложение тестировалось на Kali Linux с JDK-21.
+Приложение тестировалось на Kali Linux и Windows 11 с JDK-21.
 
 Если нужно запустить jar то:
 
