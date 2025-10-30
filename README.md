@@ -12,7 +12,6 @@ rm -rf ~/.m2/repository
 ./mvnw clean package -U
 
 5. Запустить приложение Через Maven
-
 ./mvnw javafx:run
 
 Приложение тестировалось на Kali Linux и Windows 11 с JDK-21.
